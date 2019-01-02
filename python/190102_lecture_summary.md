@@ -89,5 +89,13 @@ cd til  -> git init ->  echo '.ipynb_checkpoints/' (til 폴더 안에서 해야�
 
 
 
+커밋하는 방법
+
+cd TIL  ->  pwd  -> git remote -v  ->  git add .  ->   git status  -> git add .  -> git commit -m 'ss3 | python intro | ~190102'   -> git push
+
+
+
+
+
 
 
