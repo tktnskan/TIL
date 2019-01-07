@@ -42,7 +42,7 @@ $echo 'when i was a youn boy' > black_parade.txt     >한개는 리다이렉트 
 
 $cat black_parade.txt 
 
-
+ mv (move) 이름바꾸기
 
 
 
