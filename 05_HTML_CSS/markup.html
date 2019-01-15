@@ -17,7 +17,7 @@
         <h1>프로그래밍 교육</h1>
         <hr />  
         <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">
-            <img src="./images/python.jpg" alt="python" width="100px" height="100px">
+            <img src="C:\Users\student\tktnskan.github.io\images/python.jpg" alt="python" width="100px" height="100px">
         </a>
         <h2>
             This is python
@@ -54,10 +54,10 @@
 
         <hr />    
         <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
-            <img src="./images/html.jpg" alt="html" width="75px" height="75px">
+            <img src="C:\Users\student\tktnskan.github.io\images/html.jpg" alt="html" width="75px" height="75px">
         </a>
         <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
-            <img src="./images/css.png" alt="css" width="100px" height="100px">
+            <img src="C:\Users\student\tktnskan.github.io\images/css.png" alt="css" width="100px" height="100px">
         </a>
         <h2>
             This is html & css
@@ -143,6 +143,89 @@
                 <td rowspan="2">폴킴</td>
             </tr>
         </table>
+        
+        <h3>Form</h3>
+        <p>자기소개하기</p>
+        <form action="C:\Users\student\TIL\05_HTML_CSS/index.html">
+            <div>
+            이름: <input name="name" type="text" placeholder="이름을 입력하세요.">
+            </div>
+            <div>
+            나이: <input name="age" type="number">
+            </div>
+            <div>
+            Mobile: <input name="mobile" type="text">
+            </div>
+            <div>
+            자기소개: <textarea name="intro"></textarea>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+        <p>주문서를 작성해 주세요</p>
+        <form action="">
+            <div>
+                이름: <input name="name" type="text" placeholder="이름을 입력하세요." autofocus>
+            </div>
+            <div>
+                날짜: <input type="date" name="날짜">
+            </div>
+            
+            <p><strong>1. 샌드위치 선택</strong></p>
+            <div class='checks'> <!-- radio-->
+                <input type="radio" name="menu" checked='checked'/><span class="up""> 스테이크</span>&nbsp;&nbsp;
+                <input type="radio" name="menu"><span class="up"> 터키 아보카도</span>
+                <input type="radio" name="menu"><span class="up"> 미트볼</span>
+            </div>
+            <!--
+            <input type="radio" name="menu" value="1">스테이크
+            <input type="radio" name="menu" value="2">터키 아보카도 
+            <input type="radio" name="menu" value="3">미트볼 
+            -->
+
+            <p><strong>2. 사이즈 선택</strong></p>
+            <div>
+                사이즈 (cm): <input type="number" name="size" min="15" max="30" step="15" value="15">
+            </div>
+            <p><strong>3. 빵</strong></p>
+            <div class='checks'> <!-- option-->
+                <input type="radio" name="bread" checked='checked'/><span class="up"">허니오트</span>&nbsp;&nbsp;
+                <input type="radio" name="bread"><span class="up">플랫브래드</span>
+                <input type="radio" name="bread"><span class="up">화이트브래드</span>
+            </div>
+            <!--
+            
+            <select name="bread">
+                <option value="1">허니오트</option>
+                <option value="2">허니오트</option>
+                <option value="3">허니오트</option>
+            </select>
+            -->
+            <p><strong>4. 소스</strong></p>
+            <div> <!--체크박스-->
+            </div>
+            <!--
+                <input type="checkbox" name="option" value="1">핫칠리
+                
+
+            -->
+            <div class='checks'> <!-- radio-->
+                <input type="checkbox" id="source"><label for="source">핫칠리</label>
+                <input type="checkbox" id="source"><label for="source">스위트 칠리</label>
+                <input type="checkbox" id="source"><label for="source">랜치</label>
+                <input type="checkbox" id="source"><label for="source">홀스 래디쉬</label>
+                <input type="checkbox" id="source"><label for="source">스위트 어니언</label>
+            </div>
+
+            <!-- 
+                <input type="submit" value="Subway!">
+             -->
+            <button>Subway!</button>
+
+        </form>
+
     </body>
 
 
