@@ -1,0 +1,11 @@
+문제 1. css의 약자는 무엇인가?
+cascading sytle sheets
+
+문제 2. T, T, F
+
+문제 3. rem
+
+문제 4.
+
+    후손 셀렉터: 예를 들어 div p { color: red; } 이면 div 안에 모든 p요소가 빨간색
+    자식 셀렉터: div>p{color:red;}이면 div아래 직계자식중 p의 요소만 빨간색
