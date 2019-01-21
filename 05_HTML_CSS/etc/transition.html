@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div.circle {
+            width: 100px; height: 100px;
+            background: red;
+            transition: all 2s;
+        }
+        /* transition 은 hover 와 한 세트, 이동하거나 변할 기준점이 필요함*/
+        div.circle:hover {
+            border-radius: 50%;
+            background: blue;
+        }
+        div.status-bar {
+            width: 200px; height: 50px;
+            background: darkgray;
+            margin-bottom: 50px;
+            transition-property: width, height, background-color;
+            transition-duration: 1s, 1s
+        }
+        div.status-bar:hover {
+            width: 500px; height: 120px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="status-bar"></div>
+</body>
+</html>
