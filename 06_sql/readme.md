@@ -41,7 +41,9 @@ RENAME TO <new_table_name>;
 ```
 
 ### Table 컬럼 추가
-
+```sql
+ALTER TABLE <tabel_name>
+ADD COlUMN <new_colunm_name> 
 
 
 ## Data 조작 관련
