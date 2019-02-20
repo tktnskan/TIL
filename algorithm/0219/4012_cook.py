@@ -2,11 +2,12 @@ import sys
 sys.stdin = open('sample_input(11).txt', 'r')
 
 T = int(input())
-for test_case in range(1, T + 1):
+for test_case in range(1, 4):
     N = int(input())
     arr = []
     for i in range(N):
         arr.append(list(map(int, input().split())))
+    print(arr)
     c = []
     for i in range(len(arr)):
         c.append(i)
@@ -18,7 +19,10 @@ for test_case in range(1, T + 1):
                 b.append(c[j])
         if len(b) == N // 2:
             a.append(b)
+    print(a)
     result = []
+    result1 = []
+    result2 = []
     if len(a[0]) == 2:
         for i in a:
             for j in a:
@@ -29,19 +33,18 @@ for test_case in range(1, T + 1):
     elif len(a[0]) > 2:
         for i in a:
             h = list(set(c) - set(i))
-            result1 = []
-            result2 = []
             for j in i:
                 for k in i:
                     if j != k:
                         result1.append(arr[j][k] + arr[k][j])
-            result.append(sum(result1))
             for j in h:
                 for k in h:
                     if j != k:
                         result2.append(arr[j][k] + arr[k][j])
-            result.append(abs(sum(result1)-sum(result2)))
-        print(f'#{test_case} {min(result)//2}')
+        hi = []
+        for i in range(len(result1)):
+            hi.append(abs(result2[i]-result1[i]))
+        print(min(hi))
 
 
 

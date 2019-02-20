@@ -34,3 +34,4 @@ while o < len(arr) - 2:
 
 print(arr)
 
+
